@@ -1,0 +1,5 @@
+* text=auto eol=lf
+*.prg binary
+*.d64 binary
+*.bin binary
+*.png binary

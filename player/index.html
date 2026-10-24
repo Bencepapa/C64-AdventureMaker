@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ADVGUI HTML5 Player</title>
+<link rel="stylesheet" href="/player/player.css">
+</head>
+<body>
+<main class="cabinet">
+  <header class="masthead">
+    <div>
+      <span class="system">ADVGUI / HTML5</span>
+      <h1 id="gameTitle">LOADING...</h1>
+    </div>
+    <div class="controls">
+      <label class="game-picker">Game <select id="gameSelect" aria-label="Select game"></select></label>
+      <button id="restart" type="button">Restart</button>
+      <label class="file-button">Open JSON<input id="fileInput" type="file" accept="application/json,.json"></label>
+      <a href="/" class="editor-link">Editor</a>
+    </div>
+  </header>
+  <section class="display" aria-label="Commodore 64 game screen">
+    <canvas id="screen" width="320" height="200" tabindex="0"></canvas>
+    <div class="scanlines" aria-hidden="true"></div>
+  </section>
+  <footer>
+    <span>LEFT: USE / DRAG</span>
+    <span>RIGHT: LOOK</span>
+    <span id="status" role="status">LOADING GAME DATA</span>
+  </footer>
+</main>
+<script src="/player/player.js"></script>
+</body>
+</html>

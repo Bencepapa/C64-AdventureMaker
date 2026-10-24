@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ADVGUI Editor</title>
+<link rel="stylesheet" href="editor.css">
+</head>
+<body>
+<header class="bar">
+  <strong>ADVGUI Editor</strong>
+  <label>Game <select id="gameSel"></select></label>
+  <button id="btnNew" title="Save a copy under a new name">Save as…</button>
+  <button id="btnSave" class="primary">Save</button>
+  <button id="btnValidate">Validate</button>
+  <button id="btnBuild">Build</button>
+  <button id="btnRun">Build &amp; run in VICE</button>
+  <button id="btnPlay">Play HTML5</button>
+  <button id="btnUndo" title="Ctrl+Z">Undo</button>
+  <span id="status"></span>
+</header>
+<nav class="tabs">
+  <button data-tab="game" class="active">Game &amp; player</button>
+  <button data-tab="items">Items</button>
+  <button data-tab="rooms">Rooms &amp; doors</button>
+  <button data-tab="rules">Interactions</button>
+</nav>
+<main>
+  <section id="tab-game" class="tab active"></section>
+  <section id="tab-items" class="tab"></section>
+  <section id="tab-rooms" class="tab"></section>
+  <section id="tab-rules" class="tab"></section>
+</main>
+<pre id="log" hidden></pre>
+<script src="editor.js"></script>
+</body>
+</html>

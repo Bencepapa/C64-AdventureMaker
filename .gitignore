@@ -1,0 +1,21 @@
+# Local toolchain installed by tools/setup.ps1
+.tools/
+
+# Generated C64 and test output
+build/
+out/
+
+# Editor history and old local snapshots
+game/backups/
+versions/
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# IDE and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
